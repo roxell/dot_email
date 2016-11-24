@@ -1,0 +1,3 @@
+text/html; w3m -I %{charset} -T text/html -dump %s; copiousoutput
+text/calendar; $HOME/mutt-filters/vcalendar-filter %s
+text/calendar; $HOME/mutt-filters/vcalendar-filter %s; copiousoutput

@@ -1,0 +1,72 @@
+set mbox_type="Maildir"
+set postponed=+draft
+set record=+sent
+
+source ~/.mutt/muttrc.local
+
+set header_cache="~/.mutt/hcache"
+
+set envelope_from=yes
+
+set postpone=ask-no             #Ask if aborted messages should be postponed
+set quit=yes                    #No ask before exiting Mutt
+
+set charset="utf-8"
+set send_charset="utf-8"
+set move=no                     #Don't move read mail to other mailbox
+set timeout=30                  #Check for new mail every n seconds
+set mail_check=60               #Check for new mail in all mailboxes
+set pager_stop                  #Don't move to next message when pressing space in pager
+set pager_index_lines=12        #Show n index entries above message in pager
+set abort_unmodified=ask-yes    #Ask before aborting unmodified messages
+set delete=yes                  #Automatically delete messages marked for deletion
+set crypt_autosign=yes          #Automatically sign my mail
+
+set beep=no
+set beep_new=yes
+
+set ssl_starttls=yes
+
+set crypt_autosign=no
+set crypt_replysign=no
+
+set sort=threads ;\
+
+set edit_headers
+ignore *
+unignore From: To: Date: Subject: Cc: Bcc:
+
+alternative_order text/plain text/calendar text/html
+auto_view text/html text/calendar
+
+#####
+## Other files sourced
+
+## Format-strings
+source ~/.mutt/formats
+
+## Header settings
+source ~/.mutt/headers
+
+## Colors/Themes
+source ~/.mutt/themes/current
+
+## E-Mail aliases
+set alias_file="~/.mutt/aliases"
+source ~/.mutt/aliases
+
+##Folder hooks
+source ~/.mutt/folderhooks.default
+source ~/.mutt/folderhooks.local
+
+## Send hoks
+source ~/.mutt/sendhooks
+
+## Message hooks
+source ~/.mutt/messagehooks
+
+## GnuPG settings
+#source ~/.mutt/gpg.rc
+
+## keybindings
+source ~/.mutt/keybindings

@@ -1,0 +1,7 @@
+##
+folder-hook . '\
+	unscore * ;\
+	unset score ;\
+	set crypt_autosign = no ;\
+	set crypt_autoencrypt = no ;\
+	set ispell="aspell -e -c --lang=en" ;'

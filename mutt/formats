@@ -1,0 +1,8 @@
+###
+# Format-strings
+
+set index_format="%Z [%d] %-20.20F %s"
+#set date_format="%Y-%m-%d(%a) %H:%M"
+set date_format="%Y-%m-%d %H:%M"
+#set folder_format="%2C %t %N %F %2l %-8.8u %-8.8g %8s %d %f"
+set folder_format="%2C %t %N %d %f"

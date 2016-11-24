@@ -1,0 +1,4 @@
+## Message hooks
+
+message-hook ~A 'set allow_ansi=no'
+message-hook '~s ^Cron.*root@bamsegurkan.*\\/usr\\/sbin\\/esync' 'set allow_ansi=yes'

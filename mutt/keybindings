@@ -1,0 +1,24 @@
+## Keybindings
+
+macro	index	\cb	"<enter-command>unset wait_key\n<pipe-entry>urlview\n<enter-command>set wait_key\n"	"Call urlview to extract URLs out of a message"
+macro	pager	\cb	"<enter-command>unset wait_key\n<pipe-entry>urlview\n<enter-command>set wait_key\n"	"Call urlview to extract URLs out of a message"
+
+macro	attach	A	"<enter-command>unset wait_key<enter><pipe-entry>cat > ~/tmp/foo.vcal<enter><shell-escape>$HOME/gcalcli/gcalcli import ~/tmp/foo.vcal<enter><enter-command>set wait_key<enter>"
+
+macro	index	\Cy	'<tag-prefix><pipe-message>$HOME/.mutt/incoming_patches.sh<enter>' "output git patches"
+
+bind	index	<tab>	next-unread
+macro	index	M		"<tag-pattern>.\n<tag-prefix><clear-flag>N<untag-pattern>.\n" "Mark all messages read"
+
+bind	pager	<up>	previous-line
+bind	pager	<down>	next-line
+
+bind	browser	N		search-opposite
+bind	index	N		search-opposite
+bind	pager	N		search-opposite
+bind	compose	N		search-opposite
+
+bind index r reply ;\
+bind pager r reply ;\
+bind index m mail ;\
+bind pager m mail ;\
