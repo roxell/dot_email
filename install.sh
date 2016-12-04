@@ -18,6 +18,7 @@ external_repositories=(
     "git://github.com/terabyte/mutt-filters.git"
 )
 
+mkdir -p ${HOME}/bin
 mkdir -p ${HOME}/incoming
 mkdir -p ${reporoot}/repos
 pushd ${reporoot}/repos
