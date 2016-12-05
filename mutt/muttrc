@@ -52,8 +52,8 @@ source ~/.mutt/headers
 source ~/.mutt/themes/current
 
 ## E-Mail aliases
-set alias_file="~/.mutt/aliases"
-source ~/.mutt/aliases
+set alias_file="~/.mutt/aliases.local"
+source ~/.mutt/aliases.local
 
 ##Folder hooks
 source ~/.mutt/folderhooks.default
