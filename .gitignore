@@ -1,3 +1,5 @@
 install-lib
 hcache
 repos
+*.local
+signature-*
