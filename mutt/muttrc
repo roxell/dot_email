@@ -65,8 +65,5 @@ source ~/.mutt/sendhooks
 ## Message hooks
 source ~/.mutt/messagehooks
 
-## GnuPG settings
-#source ~/.mutt/gpg.rc
-
 ## keybindings
 source ~/.mutt/keybindings
