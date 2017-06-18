@@ -4,6 +4,7 @@ Configuration files for mutt and offlineimap.
 ## private files
 ### .offlineimaprc
 Add your own ~/.offlineimaprc file
+```
 [general]
 ui = ttyui
 accounts = gmail_account_name1, gmail_account_name2
@@ -49,9 +50,12 @@ status_backend = sqlite
 ...
 ...
 
+```
+
 ### .mutt/muttrc.local
 muttrc.local can contain something like this:
 
+```
 set folder=~/mail/archive
 set spoolfile=+gmail_account_name1/INBOX
 
@@ -61,6 +65,7 @@ set my_gpass=`get_password.py offlineimap EMAIL_ADDRESS2`
 alternates EMAIL_ADDRESS1 EMAIL_ADDRESS2
 
 mailboxes   `find ~/mail/archive -type d -regex '.*\/new$' -printf "+'%P' " |sed -e 's/\/new//g'`
+```
 
 # Dependencies
  - curl
